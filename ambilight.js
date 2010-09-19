@@ -326,7 +326,7 @@ var ambiLight = (function(){
 					old_light.parentNode.removeChild(old_light);
 			});
 		} else if (window.dojo) {
-			dojo.animateProperty({ node: canvas, duration:getOption('fade_time'),
+			dojo.animateProperty({ node: canvas, duration: getOption('fade_time'),
 				properties: { opacity: 1.0 },
 				onEnd: function() {
 					if (old_light)
