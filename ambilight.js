@@ -1,5 +1,5 @@
 /**
- * @author Sergey Chikuyonok (serge.che@gmail.com)
+ * @author Sergey Chikuyonok (serge.che@gmail.com), modified by Cedric de Saint Martin
  * @link http://chikuyonok.ru
  */
 var ambiLight = (function(){
