@@ -1,0 +1,33 @@
+#ambilight-video-wrap {
+	position:relative;
+	margin:100px auto 10px auto;
+	width:592px;
+}
+
+video.ambilight-video {
+	border:5px solid rgba(30,30,30,0.7);
+	-webkit-border-radius:3px;
+	position:relative;
+	z-index:3;
+	font-size:12px;
+}
+
+canvas.ambilight-left,
+canvas.ambilight-right {
+	position:absolute;
+	width:300px;
+	height:200%;
+	top:-50%;
+}
+
+canvas.ambilight-left {
+	left:-270px;
+	top:-53%;
+	background-image:url(mask3-left.png);
+}
+
+canvas.ambilight-right {
+	right:-270px;
+	top:-51%;
+	background-image:url(mask3-right.png);
+}
