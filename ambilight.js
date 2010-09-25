@@ -256,7 +256,6 @@ var ambiLight = (function(){
 		video.parentNode.appendChild(canvas);
 		canvas.width = canvas.offsetWidth;
 		canvas.height = canvas.offsetHeight;
-		console.log(canvas.height, canvas.width);
 		return canvas;
 	}
 	
@@ -380,3 +379,4 @@ var ambiLight = (function(){
 	}
 	
 })();
+
