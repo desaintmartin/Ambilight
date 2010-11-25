@@ -101,10 +101,13 @@ var ambiLight = (function(){
 	 * @return {Array} RGB-color
 	 */
 	function calcMidColor(data, from, to) {
-		var result = [0, 0, 0];
-		var total_pixels = (to - from) / 4;
-
-		for (var i = from; i <= to; i += 4) {
+		var result = [0, 0, 0],
+        pixelSkip = parseInt((to - from) / 50),
+		    //Each pixel is represented by r, g, b, a
+        dataSkip = pixelSkip * 4,
+		    total_pixels = (to - from) / dataSkip,
+		    i;
+		for (i = from; i <= to; i += dataSkip) {
 			result[0] += data[i];
 			result[1] += data[i + 1];
 			result[2] += data[i + 2];
